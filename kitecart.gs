@@ -18,7 +18,7 @@ function buildHTML(){
     orders().reduce(function(prev, curr){
     return prev += curr
     }, '<script src="https://kite.zerodha.com/publisher.js"></script>;' +
-       '<script> KiteConnect.ready(function() { var kite = new KiteConnect("mpqxfuz4emmqg9q6");'),
+       '<script> KiteConnect.ready(function() { var kite = new KiteConnect("kitefront");'),
     "kite.connect(); setTimeout(function(){ google.script.host.close(); }, 2000); })</script>")
 }
 
